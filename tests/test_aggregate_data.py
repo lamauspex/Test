@@ -2,7 +2,6 @@
 from csv_processor import aggregate_data
 
 
-
 # Проверка агрегации данных в колонке с числовыми значениями
 def test_aggregate_data_valid():
     data = [{'price': 10}, {'price': 20}, {'price': 30}]
@@ -21,9 +20,3 @@ def test_aggregate_data_no_values():
     assert result['min'] is None
     assert result['max'] is None
     assert result['total'] is None
-
-
-# Проверка ошибки
-def test_aggregate_data_key_error():
-    data = [{'price': '10'}, {'price': '20'}, {'price': '30'}]
-    assert ('Ошибка при обработке строки {row}: {e}')
