@@ -15,7 +15,7 @@
 1. Клонируйте репозиторий:
 
 ```shell
-git clone https://github.com/lamauspex/Test.git
+git clone https://github.com/lamauspex/test_task-CSV-Processor
 ```
 
 
